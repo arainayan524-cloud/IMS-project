@@ -1,0 +1,13 @@
+{
+  "name": "inventory-management-system",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm --prefix server run dev\" \"npm --prefix IMS/frontend run dev -- --host 0.0.0.0\"",
+    "build": "npm --prefix IMS/frontend run build",
+    "server": "npm --prefix server run dev",
+    "client": "npm --prefix IMS/frontend run dev -- --host 0.0.0.0"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.0"
+  }
+}
