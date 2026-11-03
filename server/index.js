@@ -5,6 +5,7 @@ import authRoutes from "./Routes/auth.js";
 import categoryRoutes from "./Routes/categoryRoutes.js";
 import supplierRoutes from "./Routes/supplierRoutes.js";
 import productRoutes from "./Routes/productRoutes.js";
+import userRoutes from "./Routes/userRoutes.js";
 
 const app = express();
 const PORT = 5000;
@@ -15,6 +16,7 @@ app.use('/auth', authRoutes);
 app.use('/api/category', categoryRoutes);
 app.use('/api/supplier', supplierRoutes);
 app.use('/api/product', productRoutes);
+app.use('/api/users', userRoutes);
 
 app.listen(PORT, () => {
     connectDB();
